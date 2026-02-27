@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.git/
+.github/
+.env
+*.db
+*.sqlite
+*.tsbuildinfo
+
+# Test and documentation files not needed in the image
+test/
+docs/
+certification/
+README.md
+vitest.config.js
+.gitignore
+.prettierrc*

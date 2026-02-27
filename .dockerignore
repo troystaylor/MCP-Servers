@@ -1,0 +1,35 @@
+# Git & IDE
+.git
+.github
+.specify
+.vscode
+*.code-workspace
+
+# Dependencies (rebuilt in container)
+node_modules
+**/node_modules
+
+# Build artifacts (rebuilt in container)
+**/dist
+**/build
+
+# SDK extras not needed for the server build
+typescript-sdk/examples
+typescript-sdk/test
+typescript-sdk/.changeset
+typescript-sdk/.github
+typescript-sdk/docs
+typescript-sdk/.git
+
+# Dev files
+**/*.test.ts
+**/test
+**/vitest.config.*
+**/.env
+**/.env.*
+!**/.env.example
+
+# Docker & Azure
+**/Dockerfile
+**/.dockerignore
+azure.yaml

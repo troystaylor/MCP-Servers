@@ -1,0 +1,107 @@
+{
+  "name": "ServiceNowMCP",
+  "displayName": "ServiceNow MCP Server",
+  "description": "A Model Context Protocol (MCP) server providing 42 tools for ServiceNow ITSM, CSM, Change Management, Knowledge Management, CMDB, Service Catalog, and Flow Designer operations.",
+  "categories": [
+    "IT Operations",
+    "Business Management",
+    "Productivity"
+  ],
+  "premium": true,
+  "mcpServer": true,
+  "transportType": "streamableHttp",
+  "version": "0.1.0",
+  "publisher": {
+    "name": "Troy Taylor"
+  },
+  "contact": {
+    "name": "Troy Taylor"
+  },
+  "license": {
+    "name": "MIT"
+  },
+  "keywords": [
+    "servicenow",
+    "itsm",
+    "incident",
+    "change-management",
+    "cmdb",
+    "service-catalog",
+    "knowledge-management",
+    "csm",
+    "mcp",
+    "ai-agent"
+  ],
+  "toolCategories": {
+    "Table API": [
+      "list_records",
+      "get_record",
+      "create_record",
+      "update_record",
+      "delete_record"
+    ],
+    "Aggregate": [
+      "aggregate_records"
+    ],
+    "Incident Management": [
+      "create_incident",
+      "resolve_incident"
+    ],
+    "Problem Management": [
+      "create_problem",
+      "get_problem",
+      "update_problem"
+    ],
+    "Change Management": [
+      "create_change_request",
+      "get_change_request",
+      "update_change_request",
+      "check_change_conflict",
+      "list_change_tasks"
+    ],
+    "Knowledge Management": [
+      "search_knowledge_articles",
+      "get_knowledge_article"
+    ],
+    "Customer Service Management": [
+      "create_csm_case",
+      "get_csm_case",
+      "update_csm_case",
+      "list_csm_accounts",
+      "get_csm_account",
+      "list_csm_contacts",
+      "get_csm_contact",
+      "create_csm_order",
+      "get_csm_order"
+    ],
+    "Service Catalog": [
+      "list_catalog_items",
+      "get_catalog_item",
+      "order_catalog_item"
+    ],
+    "CMDB": [
+      "get_cmdb_meta",
+      "cmdb_identify_reconcile"
+    ],
+    "Attachments": [
+      "list_attachments",
+      "get_attachment",
+      "delete_attachment",
+      "upload_attachment"
+    ],
+    "Import Sets": [
+      "import_set_insert"
+    ],
+    "Flow Designer": [
+      "execute_flow"
+    ],
+    "Batch": [
+      "batch_api"
+    ],
+    "Service Requests": [
+      "list_requests",
+      "get_request_item",
+      "list_request_items"
+    ]
+  }
+}

@@ -78,9 +78,9 @@ You are an expert in the **Model Context Protocol (MCP)** and the **MCP TypeScri
 
 ## References
 
-- SDK source: [typescript-sdk/packages/server/](typescript-sdk/packages/server/)
-- Server quickstart example: [typescript-sdk/examples/server-quickstart/](typescript-sdk/examples/server-quickstart/)
-- Full server example: [typescript-sdk/examples/server/](typescript-sdk/examples/server/)
+- SDK source: [typescript-sdk/packages/server/](../../typescript-sdk/packages/server/)
+- Server quickstart example: [typescript-sdk/examples/server-quickstart/](../../typescript-sdk/examples/server-quickstart/)
+- Full server example: [typescript-sdk/examples/server/](../../typescript-sdk/examples/server/)
 - Agent 365 SDK overview: https://learn.microsoft.com/en-us/microsoft-agent-365/developer/agent-365-sdk?tabs=nodejs
 - Agent 365 tooling servers: https://learn.microsoft.com/en-us/microsoft-agent-365/tooling-servers-overview
 - Agent 365 tooling docs: https://learn.microsoft.com/microsoft-agent-365/developer/tooling?tabs=nodejs

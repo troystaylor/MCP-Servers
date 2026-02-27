@@ -1,0 +1,16 @@
+{
+  "$schema": "https://aka.ms/agent365/tooling-manifest-schema",
+  "version": "1.0",
+  "mcpServers": [
+    {
+      "mcpServerName": "ServiceNow MCP Server",
+      "mcpServerUniqueName": "servicenow-mcp-server",
+      "transportType": "streamableHttp",
+      "endpoint": "${MCP_SERVER_URL}/mcp",
+      "scope": "organization",
+      "audience": "${MCP_SERVER_URL}",
+      "description": "MCP server wrapping ServiceNow REST APIs — 42 tools for CRUD, incidents, problems, change management, service catalog, CSM, knowledge base, and more.",
+      "authType": "oauth2-dynamic-discovery"
+    }
+  ]
+}

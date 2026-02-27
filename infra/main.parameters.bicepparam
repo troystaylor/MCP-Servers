@@ -1,0 +1,10 @@
+using './main.bicep'
+
+param location = ''
+param environmentName = ''
+param servicenowInstanceUrl = ''
+param servicenowUsername = ''
+param servicenowPassword = ''
+param servicenowAuthType = 'basic'
+param servicenowClientId = ''
+param servicenowClientSecret = ''

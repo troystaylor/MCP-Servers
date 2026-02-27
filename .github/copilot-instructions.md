@@ -3,6 +3,7 @@
 ## Contents
 
 - General Guidelines
+- Spec-Driven Development
 - SDK Update Checklist
 - Microsoft Agent 365 Integration
 
@@ -19,6 +20,36 @@
 - **TypeScript conventions** for `src/**/*.ts` files are in `.github/instructions/typescript-server.instructions.md`.
 - **Config file conventions** for `package.json` / `tsconfig.json` are in `.github/instructions/config-files.instructions.md`.
 - The **Microsoft 365 Agents Toolkit** VS Code extension (`TeamsDevApp.ms-teams-vscode-extension`) is installed. Use it for creating, debugging, and deploying agents that consume MCP servers — including declarative agents, custom engine agents, and Teams bots. CLI: `@microsoft/m365agentstoolkit-cli`.
+
+## Spec-Driven Development
+
+This workspace uses **GitHub Spec Kit** for structured, spec-driven development of MCP servers. Before building a new server, use the `/speckit.*` slash commands to define requirements, plan implementation, and break work into tasks.
+
+### Workflow
+
+1. `/speckit.constitution` — establish or review project principles (stored in `.specify/memory/constitution.md`)
+2. `/speckit.specify` — describe what the server should do; generates a feature branch and `spec.md`
+3. `/speckit.clarify` *(optional)* — de-risk ambiguous areas before planning
+4. `/speckit.plan` — provide tech stack and architecture choices; generates `plan.md`, data models, and contracts
+5. `/speckit.tasks` — generate an actionable task list from the plan
+6. `/speckit.analyze` *(optional)* — cross-artifact consistency check
+7. `/speckit.implement` — execute all tasks to build the feature
+
+### Key Paths
+
+- `.specify/` — scripts, templates, and memory (constitution)
+- `.specify/templates/` — spec, plan, tasks, and checklist templates
+- `specs/<NNN-feature-name>/` — generated feature specs, plans, tasks, and contracts
+- `.github/agents/speckit.*.agent.md` — agent definitions for each command
+- `.github/prompts/speckit.*.prompt.md` — prompt files for each command
+
+### Prerequisites
+
+- Python 3.11+ and [uv](https://docs.astral.sh/uv/) (for the `specify` CLI)
+- Install: `uv tool install specify-cli --from git+https://github.com/github/spec-kit.git`
+- Upgrade: `uv tool install specify-cli --force --from git+https://github.com/github/spec-kit.git`
+
+---
 
 ## SDK Update Checklist
 

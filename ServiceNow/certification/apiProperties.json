@@ -1,0 +1,36 @@
+{
+  "properties": {
+    "connectionParameters": {
+      "token": {
+        "type": "oauthSetting",
+        "oAuthSettings": {
+          "identityProvider": "oauth2generic",
+          "clientId": "",
+          "scopes": "mcp:tools",
+          "redirectUrl": "https://global.consent.azure-apim.net/redirect",
+          "properties": {
+            "IsFirstParty": "False"
+          },
+          "customParameters": {
+            "authorizationUrlTemplate": {
+              "value": "{resourceUrl}/.well-known/oauth-authorization-server"
+            },
+            "authorizationUrl": {
+              "value": "{resourceUrl}/api/auth/authorize"
+            },
+            "tokenUrl": {
+              "value": "{resourceUrl}/api/auth/token"
+            },
+            "refreshUrl": {
+              "value": "{resourceUrl}/api/auth/token"
+            }
+          }
+        }
+      }
+    },
+    "iconBrandColor": "#1a73e8",
+    "capabilities": [],
+    "publisher": "Troy Taylor",
+    "stackOwner": "Troy Taylor"
+  }
+}

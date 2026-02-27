@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
+name: mcp-servers
+metadata:
+  template: mcp-servers
+
+services:
+  servicenow:
+    project: ./ServiceNow
+    host: containerapp
+    language: ts
+    docker:
+      path: ./ServiceNow/Dockerfile
+      context: .
