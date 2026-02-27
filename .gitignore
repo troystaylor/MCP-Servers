@@ -25,9 +25,11 @@ Thumbs.db
 # Azure local state
 .azure/
 
-# Workspace-specific (do not push these)
-typescript-sdk/
+# Workspace-specific (excluded from repo)
+typerscript-sdk/
 .specify/
+.github/
+.vscode/
 *.code-workspace
 pnpm-workspace.yaml
 build-context/
